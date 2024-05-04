@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="nav-main">
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-6">
+                    <div class="contact">
+                        <a href="tel:+1 243-765-4321"><i class="fa-solid fa-phone"></i> +1 243-765-4321</a>
+                        <a href="mailto:helpline@realestatest.com"><i class="fa-solid fa-envelope"></i> mahmoud8rashad@gmail.com </a>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="log-sin">
+                        <a href="login.html" style=" margin-right: 15px;"> <i class="fa-solid fa-user"></i> Login</a><span style=" font-size: 24px; ">|</span><a href="register.html" style=" margin-left: 14px; "> <i class="fa-solid fa-user-plus"></i> Register</a>
+                   </div>
+
+                               <!-- <li class="nav-item dropdown show nav-meun">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="    color: #fff;font-size: 18px;">My Account</a>
+                <ul class="dropdown-menu">
+                    <li class="nav-item"> <a class="nav-link" href="profile.php"><i class="fa-solid fa-circle-user"></i> Profile</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="feature.php"><i class="fa-solid fa-box-archive"></i> Your Property</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="logout.php"><i class="fa-solid fa-right-from-bracket"></i> Logout</a> </li>	
+                </ul>
+            </li> -->
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="loge-1">
+        <a href="index.html"><img src="img/restatelg.png" alt=""></a>
+    </div>
+    <header class="header">
+       <div class="container nav">
+
+            <a href="index.html" class="header-img"><img src="img/restatelg.png" alt=""></a>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="agent.html">Agent</a>
+                <a href="" class="none-bloke">Login/Register</a>
+                <a href="propertyadd.html" class="  Submit" >Submit Peoperty</a>
+    </div>
+
+    </header>
+    <div class="Offcanva">
+        <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #fff;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="img/restatelg.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="about.html">About</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="agent.html">Agent</a>
+                  </li>
+                  <li class="nav-item" style="display: flex;     margin-top: 7px;">
+                  <a class="nav-link active" href="login.html" style="margin-top: -9px;">Login</a>/<a href="register.html">Register</a>
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+          </nav>
+    </div>
+    <!-- ================================================================================ -->
+    <h1 class="from-add-h1">Submit Property</h1>
+    <div class="container from-add">
+        <form class="form-horizontal" action="?do=Insert" method="POST" enctype="multipart/form-data">
+            <div class="row">
+            <!-- ====================================================== -->
+            <div class="col-lg-12">
+                <label for="">Title</label>
+                <input type="text" class="form-control" name="title" placeholder="Enter Title">
+                </div>
+                <!-- ========================================== -->
+                <div class="col-sm-6">
+                    <label for="">Type</label>
+                    <div>
+                    <select class="form-control" required name="type">
+                        <option value="">Select Type</option>
+                </select>
+                </div>
+                </div>
+                <!-- ======================================= -->
+                <div class="col-sm-6">
+                <label for="">S/R</label>
+                <div>
+                <select class="form-select" required name="stype">
+                <option value="">Select Status</option>
+                <option value="Rent">Rent</option>
+                <option value="Sale">Sale</option>
+                </select>
+                </div>
+                </div>
+                <!-- ========================================== -->
+                <div class="col-sm-6">
+                    <label for="">Bedroom</label>
+                <input type="number" class="form-control" name="bed" id="exampleInputEmail1" aria-describedby="emailHelp" required placeholder="Enter Bedroom  (only no 1 to 10)">
+                </div>
+                <!-- =================================================== -->
+                <div class="col-sm-6">
+                <label for="">Bathroom</label>
+                <input type="number" class="form-control" name="bath" id="exampleInputEmail1" aria-describedby="emailHelp" required placeholder="Enter Bathroom (only no 1 to 10)">
+                </div>
+                <!-- ========================================== -->
+                <div class="col-sm-6">
+                    <label for="">Kitchen</label>
+                <input type="number" class="form-control" name="kitc" id="exampleInputEmail1" aria-describedby="emailHelp" required placeholder="Enter Kitchen (only no 1 to 10)" >
+                </div>
+                <!-- =================================================== -->
+                <div class="col-sm-6">
+                <label for="">Floor</label>
+                <div>
+                <select class="form-select" required name="floor">
+                <option value="">Select Floor</option>
+                <option value="1st Floor">1st Floor</option>
+                <option value="2nd Floor">2nd Floor</option>
+                <option value="3rd Floor">3rd Floor</option>
+                <option value="4th Floor">4th Floor</option>
+                <option value="5th Floor">5th Floor</option>
+                </select>
+                </div>
+                </div>
+                <!-- ========================================== -->
+                <div class="col-sm-6">
+                    <label for="">Area Size</label>
+                <input type="number" class="form-control" name="asize" id="exampleInputEmail1" aria-describedby="emailHelp" required placeholder="Enter Area Size (in sqrt)">
+                </div>
+                <!-- ======================================== -->
+                <div class="col-sm-6">
+                    <label for="">Price</label>
+                <input type="number" class="form-control" name="price" id="exampleInputEmail1" aria-describedby="emailHelp" required placeholder="Enter Price">
+                </div>
+                <!-- =================================================== -->
+                <div class="col-sm-6">
+                <label for="">Address</label>
+                <input type="text" class="form-control" name="loc" id="exampleInputEmail1" aria-describedby="emailHelp" required placeholder="Enter Address">
+                </div>
+                <!-- ========================================== -->
+                <div class="col-sm-6">
+                    <label for="">City</label>
+                <input type="text" class="form-control" name="city" id="exampleInputEmail1" aria-describedby="emailHelp" required placeholder="Enter City">
+                </div>
+                <!-- ================================================= -->
+                <div class="col-sm-12">
+                    <!-- =================================================  -->
+                 <input type="checkbox" class="btn-check" id="heating"  name="heating"  value="1">
+                <label class="btn btn-outline-secondary btn-me heating" for="heating">Central A/C & heating</label>
+                <!-- =================================================  -->
+                <!-- =================================================  -->
+                <input type="checkbox" class="btn-check" id="Balcony"  name="balcony"  value="1">
+                <label class="btn btn-outline-secondary btn-me" for="Balcony">Balcony</label>
+                <!-- =================================================  -->
+                <!-- =================================================  -->
+                <input type="checkbox" class="btn-check" id="Garden"  name="Garden"  value="1">
+                <label class="btn btn-outline-secondary btn-me" for="Garden">Private Garden</label>
+                <!-- =================================================  -->
+                <!-- =================================================  -->
+                <input type="checkbox" class="btn-check" id="Maids"  name="Maids"  value="1">
+                <label class="btn btn-outline-secondary btn-me" for="Maids">Maids Room</label>
+                <!-- =================================================  -->
+                <!-- =================================================  -->
+                <input type="checkbox" class="btn-check" id="Covered"  name="Covered"  value="1">
+                <label class="btn btn-outline-secondary btn-me" for="Covered">Covered Parking</label>
+                <!-- =================================================  -->
+                <input type="checkbox" class="btn-check" id="Security"  name="Security"  value="1">
+                <label class="btn btn-outline-secondary btn-me" for="Security">Security</label>
+                <!-- =================================================  -->
+                <input type="checkbox" class="btn-check" id="Allowed"  name="Allowed"  value="1">
+                <label class="btn btn-outline-secondary btn-me" for="Allowed">Pets Allowed</label>
+                <!-- =================================================  -->
+                <input type="checkbox" class="btn-check" id="Pool"  name="Pool"  value="1">
+                <label class="btn btn-outline-secondary btn-me" for="Pool">Pool</label>
+                <!-- =================================================  -->
+                <input type="checkbox" class="btn-check" id="Electricity"  name="Electricity"  value="1">
+                <label class="btn btn-outline-secondary btn-me" for="Electricity">Electricity Meter</label>
+                <!-- =================================================  -->
+                <input type="checkbox" class="btn-check" id="Water"  name="Water"  value="1">
+                <label class="btn btn-outline-secondary btn-me" for="Water">Water Meter</label>
+                <!-- =================================================  -->
+                <input type="checkbox" class="btn-check" id="Landline"  name="Landline"  value="1">
+                <label class="btn btn-outline-secondary btn-me" for="Landline">Landline</label>
+                <!-- =================================================  -->
+                <input type="checkbox" class="btn-check" id="Natural"  name="Natural"  value="1">
+                <label class="btn btn-outline-secondary btn-me" for="Natural">Natural Gas</label>
+                <!-- =================================================  -->
+                <input type="checkbox" class="btn-check" id="Elevator"  name="Elevator"  value="1">
+                <label class="btn btn-outline-secondary btn-me" for="Elevator">Elevator</label>
+
+                <!-- ================================================= -->
+                </div>
+                <!-- ================================================= -->
+                <div class="col-sm-6">
+                    <label for="">Image 1</label>
+                    <input type="file" class="form-control" name="aimage" aria-label="file example" required>
+                </div>
+
+
+                <div class="col-sm-6">
+                    <label for="">Image 2</label>
+                    <input type="file" class="form-control" name="aimage2" aria-label="file example" required>
+                </div>
+
+                <div class="col-sm-6">
+                    <label for="">Image 3</label>
+                    <input type="file" class="form-control" name="aimage3" aria-label="file example" required>
+                </div>
+
+                <div class="col-sm-6">
+                    <label for="">Image 4</label>
+                    <input type="file" class="form-control" name="aimage4" aria-label="file example" required>
+                </div>
+
+
+
+
+                <div class="col-sm-12">
+                <label for="floatingTextarea">Description</label>
+                <textarea name="" class="form-control" id="" cols="30" rows="10"></textarea>
+                </div>
+                
+
+                
+               
+            </div>
+            <button type="submit"  class="btn btn-dark" name="add">Submit</button>
+        </form>
+    </div>
+
+        <!-- start footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="div-footer">
+                            <img src="img/restatelg_white.png" alt="">
+                            <p>Risus commodo congue augue phasellus morbi hymenaeos ante tincidunt eu orci dictum bibendum lacus platea primis mi lacinia felis gravida natoque bibendum cubilia montes tristique et arcu blandit risus. Lobortis dignissim nam.</p>
+                        </div>
+                        <div class="footer-widget">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a> 
+                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a> 
+                            <a href="#"><i class="fas fa-rss"></i></a>
+                         </div>
+                    </div>
+                    <div class="col-lg-8 col-md-12">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <div class="div-footer footer-support">
+                                    <h3>Support</h3>
+                                    <ul>
+                                        <li><a href="">Forum</a></li>
+                                        <li><a href="">Terms and Condition</a></li>
+                                        <li><a href="">Frequenlty Asked Question</a></li>
+                                        <li><a href="">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="div-footer footer-link">
+                                    <h3>Quick Link</h3>
+                                    <ul>
+                                        <li><a href="">About Us</a></li>
+                                        <li><a href="">Featured Property</a></li>
+                                        <li><a href="">Submit Property</a></li>
+                                        <li><a href="">Our Agents</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="div-footer-social">
+                                    <h3>Contact Us</h3>
+                                    <ul >
+                                        <li><a href=""><i class="fa-solid fa-location-dot"></i>27 Ingram Street, Dayton</a></li>
+                                        <li><a href="tel:+1 234-567-8910"><i class="fa-solid fa-phone"></i>+1 234-567-8910</a></li>
+                                        <li><a href="tel:+1 243-765-4321"><i class="fa-solid fa-phone"></i>+1 243-765-4321</a></li>
+                                        <li><a href="mailto:helpline@realestatest.com"><i class="fa-solid fa-envelope"></i> helpline@realestatest.com</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="txt-pt-15">© 2023 Real Estate Website - Developed <i class="fa-solid fa-heart" style="color: red; margin-left: 10px; margin-right: 10px; "></i> BY Mahmoud Rsahad</p>
+                </div>
+            </div>
+        </div>
+        <!-- end footer -->
+
+        <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
